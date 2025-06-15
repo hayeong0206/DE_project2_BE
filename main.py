@@ -9,7 +9,7 @@ app = FastAPI()
 # React에서 요청을 허용하기 위해 CORS 설정
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # 개발 중에는 * 허용
+    allow_origins=["https://de-project2.netlify.app"],  # 개발 중에는 * 허용
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
